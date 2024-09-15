@@ -11,6 +11,26 @@ composer require w3lifer/yii2-js-data-provider
 
 ## Usage
 
+**1. Create `@app/controllers/JsDataProviderController`:**
+
+``` php
+<?php
+
+namespace app\controllers;
+
+class JsDataProviderController extends \yii\web\Controller
+{
+    public function actionIndex(): string
+    {
+        return $this->render('index');
+    }
+}
+```
+
+---
+
+**2. Create `@app/views/js-data-provider/index.php`:**
+
 ``` php
 <?php
 
@@ -33,7 +53,9 @@ $this->title = 'JsDataProvider';
 ]);
 ```
 
-The code above registers the following JavaScript in the `<head>` section:
+---
+
+**3. The code above registers the following JavaScript in the `<head>` section:**
 
 ``` html
 <script>const MY_CONST={"foo":"bar","baz":"qux"}</script>
