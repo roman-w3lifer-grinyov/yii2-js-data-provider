@@ -1,0 +1,26 @@
+{
+  "name": "w3lifer/yii2-js-data-provider",
+  "keywords": [
+    "yii2",
+    "js",
+    "data",
+    "provider"
+  ],
+  "type": "yii2-extension",
+  "require": {
+    "php": "^8.0",
+    "yiisoft/yii2": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "w3lifer\\Yii2\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Roman Grinyov",
+      "email": "w3lifer@gmail.com"
+    }
+  ],
+  "license": "MIT"
+}
